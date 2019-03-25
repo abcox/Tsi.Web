@@ -1,0 +1,45 @@
+# IO.Swagger.Model.TsiWebQuoteDetailAssemblyItem
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**QuoteDetailAssemblyItemNumber** | **int?** |  | [optional] 
+**PriceLevel** | **int?** |  | [optional] 
+**CancelledBy** | **int?** |  | [optional] 
+**InvoiceAssemblyDetailNumber** | **int?** |  | [optional] 
+**ServiceOrderAssemblyDetailNumber** | **int?** |  | [optional] 
+**PriceLevelDescription** | **string** |  | [optional] 
+**AssemblyItemId** | **string** |  | [optional] 
+**ItemId** | **string** |  | [optional] 
+**ItemDescription** | **string** |  | [optional] 
+**UnitOfMeasure** | **string** |  | [optional] 
+**Taxable** | **bool?** |  | [optional] 
+**GSTExempt** | **bool?** |  | [optional] 
+**PrintOnQuote** | **bool?** |  | [optional] 
+**PrintOnInvoice** | **bool?** |  | [optional] 
+**SubjectToProviderTax** | **bool?** |  | [optional] 
+**UseThisCostWhenOrdering** | **bool?** |  | [optional] 
+**OrderByDate** | **DateTime?** |  | [optional] 
+**Type** | **string** |  | [optional] 
+**EachQuantity** | **double?** |  | [optional] 
+**Quantity** | **double?** |  | [optional] 
+**QuantityFilled** | **double?** |  | [optional] 
+**QuantityPosted** | **double?** |  | [optional] 
+**UnitHoursNeeded** | **double?** |  | [optional] 
+**HoursEntered** | **double?** |  | [optional] 
+**TotalHoursNeeded** | **double?** |  | [optional] 
+**QuantityOrdered** | **double?** |  | [optional] 
+**QuantityReceived** | **double?** |  | [optional] 
+**ManufacturerListPrice** | **double?** |  | [optional] 
+**BookPrice** | **double?** |  | [optional] 
+**SellingPrice** | **double?** |  | [optional] 
+**TotalSellingPrice** | **double?** |  | [optional] 
+**Cost** | **double?** |  | [optional] 
+**TotalCost** | **double?** |  | [optional] 
+**TaxableAmount** | **double?** |  | [optional] 
+**GSTaxableAmount** | **double?** |  | [optional] 
+**ActualUnitCost** | **double?** |  | [optional] 
+**ProviderTaxableAmount** | **double?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

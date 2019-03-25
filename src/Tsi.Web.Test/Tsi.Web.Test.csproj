@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB07C7D1-22F0-407A-854F-9EE4228A0695}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tsi.Web.Test</RootNamespace>
+    <AssemblyName>Tsi.Web.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MSTest.TestFramework.1.3.2\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\RestSharp.105.1.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\AccountsApiTests.cs" />
+    <Compile Include="Api\AgreementsApiTests.cs" />
+    <Compile Include="Api\ContactsApiTests.cs" />
+    <Compile Include="Api\ContractsApiTests.cs" />
+    <Compile Include="Api\DiagnosticsApiTests.cs" />
+    <Compile Include="Api\MasterTablesApiTests.cs" />
+    <Compile Include="Api\OpportunityApiTests.cs" />
+    <Compile Include="Api\PriceBookApiTests.cs" />
+    <Compile Include="Api\ProjectsApiTests.cs" />
+    <Compile Include="Api\PurchaseOrdersApiTests.cs" />
+    <Compile Include="Api\QuotesApiTests.cs" />
+    <Compile Include="Api\RepsApiTests.cs" />
+    <Compile Include="Api\ServiceOrdersApiTests.cs" />
+    <Compile Include="Api\TasksApiTests.cs" />
+    <Compile Include="Api\TimeEntryApiTests.cs" />
+    <Compile Include="Api\TimeSlipApiTests.cs" />
+    <Compile Include="Model\SystemNullableTsiWebOptionalDateTimeTests.cs" />
+    <Compile Include="Model\SystemNullableTsiWebSplitDateTimeTests.cs" />
+    <Compile Include="Model\TsiWebAccountAssetAssemblyDetailTests.cs" />
+    <Compile Include="Model\TsiWebAccountAssetSummaryTests.cs" />
+    <Compile Include="Model\TsiWebAccountAssetTests.cs" />
+    <Compile Include="Model\TsiWebAccountCustomerAssetResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountDetailTests.cs" />
+    <Compile Include="Model\TsiWebAccountExternalProductResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountExternalProductTests.cs" />
+    <Compile Include="Model\TsiWebAccountingDetailResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountingDetailTests.cs" />
+    <Compile Include="Model\TsiWebAccountingTests.cs" />
+    <Compile Include="Model\TsiWebAccountJournalEntryModelTests.cs" />
+    <Compile Include="Model\TsiWebAccountManagedAssetResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountManagedAssetTests.cs" />
+    <Compile Include="Model\TsiWebAccountMarketingDetailsResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountMarketingDetailsTests.cs" />
+    <Compile Include="Model\TsiWebAccountMarketingDetailTests.cs" />
+    <Compile Include="Model\TsiWebAccountProfileTests.cs" />
+    <Compile Include="Model\TsiWebAccountResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountServiceDetailsResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountServiceDetailsTests.cs" />
+    <Compile Include="Model\TsiWebAccountServiceDetailTests.cs" />
+    <Compile Include="Model\TsiWebAccountSourceTests.cs" />
+    <Compile Include="Model\TsiWebAccountStatusTests.cs" />
+    <Compile Include="Model\TsiWebAccountSummaryTests.cs" />
+    <Compile Include="Model\TsiWebAccountSystemResponseTests.cs" />
+    <Compile Include="Model\TsiWebAccountSystemTests.cs" />
+    <Compile Include="Model\TsiWebAccountTests.cs" />
+    <Compile Include="Model\TsiWebAccountTypeTests.cs" />
+    <Compile Include="Model\TsiWebAddQuoteToExistingServiceOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebAddQuoteToNewServiceOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebAddressTests.cs" />
+    <Compile Include="Model\TsiWebAdvancedSearchRequestTests.cs" />
+    <Compile Include="Model\TsiWebAgreementAdditionalChargeTests.cs" />
+    <Compile Include="Model\TsiWebAgreementBillToTests.cs" />
+    <Compile Include="Model\TsiWebAgreementCoveredAssetTypeTests.cs" />
+    <Compile Include="Model\TsiWebAgreementCustomerAssetTests.cs" />
+    <Compile Include="Model\TsiWebAgreementDetailTests.cs" />
+    <Compile Include="Model\TsiWebAgreementSummaryTests.cs" />
+    <Compile Include="Model\TsiWebAgreementTests.cs" />
+    <Compile Include="Model\TsiWebAlternateAddressTests.cs" />
+    <Compile Include="Model\TsiWebAreasWebApiUpdateDocumentModelTests.cs" />
+    <Compile Include="Model\TsiWebAssemblyDetailTests.cs" />
+    <Compile Include="Model\TsiWebAssemblyItemTests.cs" />
+    <Compile Include="Model\TsiWebAssetTypeTests.cs" />
+    <Compile Include="Model\TsiWebAssignedMarketingGroupsResponseTests.cs" />
+    <Compile Include="Model\TsiWebAssignedMarketingGroupTests.cs" />
+    <Compile Include="Model\TsiWebAssignedMarketingProfilesResponseTests.cs" />
+    <Compile Include="Model\TsiWebAssignedMarketingProfileTests.cs" />
+    <Compile Include="Model\TsiWebAssignedSICCodesResponseTests.cs" />
+    <Compile Include="Model\TsiWebAssignedSICCodeTests.cs" />
+    <Compile Include="Model\TsiWebAssignSystemModelTests.cs" />
+    <Compile Include="Model\TsiWebBasisTests.cs" />
+    <Compile Include="Model\TsiWebBillToResponseTests.cs" />
+    <Compile Include="Model\TsiWebBillToTests.cs" />
+    <Compile Include="Model\TsiWebBOTaxCodeTests.cs" />
+    <Compile Include="Model\TsiWebBOTaxTypeTests.cs" />
+    <Compile Include="Model\TsiWebCloseReasonTests.cs" />
+    <Compile Include="Model\TsiWebCoManagedTechnicianResponseTests.cs" />
+    <Compile Include="Model\TsiWebCoManagedTechnicianTests.cs" />
+    <Compile Include="Model\TsiWebContactDetailTests.cs" />
+    <Compile Include="Model\TsiWebContactJournalEntryModelTests.cs" />
+    <Compile Include="Model\TsiWebContactProfileTests.cs" />
+    <Compile Include="Model\TsiWebContactResponseTests.cs" />
+    <Compile Include="Model\TsiWebContactSummaryTests.cs" />
+    <Compile Include="Model\TsiWebContactTests.cs" />
+    <Compile Include="Model\TsiWebContractAccountTests.cs" />
+    <Compile Include="Model\TsiWebContractBillToAddressTests.cs" />
+    <Compile Include="Model\TsiWebContractDetailResponseTests.cs" />
+    <Compile Include="Model\TsiWebContractDetailTests.cs" />
+    <Compile Include="Model\TsiWebContractMeterGroupBillingTests.cs" />
+    <Compile Include="Model\TsiWebContractMeterGroupTests.cs" />
+    <Compile Include="Model\TsiWebContractMeterTests.cs" />
+    <Compile Include="Model\TsiWebContractResponseTests.cs" />
+    <Compile Include="Model\TsiWebContractServiceOrderTests.cs" />
+    <Compile Include="Model\TsiWebContractSummaryTests.cs" />
+    <Compile Include="Model\TsiWebContractTests.cs" />
+    <Compile Include="Model\TsiWebConversionItemTests.cs" />
+    <Compile Include="Model\TsiWebConvertTimeLogsToLaborItemModelTests.cs" />
+    <Compile Include="Model\TsiWebCountryTests.cs" />
+    <Compile Include="Model\TsiWebCreateAccountModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateContactModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateContractLineItemModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateContractModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateManagedPrintServiceOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebCreatePriceBookItemModelTests.cs" />
+    <Compile Include="Model\TsiWebCreatePurchaseOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebCreatePurchaseOrderResponseTests.cs" />
+    <Compile Include="Model\TsiWebCreateQuoteDetailCommentModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateQuoteDetailItemModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateQuoteDetailNonStockModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateQuoteDetailSubTotalModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateQuoteModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateRecurringServiceOrderScheduleModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateRecurringServiceOrderScheduleResponseTests.cs" />
+    <Compile Include="Model\TsiWebCreateServiceOrderItemServicedModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateServiceOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateServiceOrderNonStockModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateServiceOrderPartsUsedModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateServiceOrderTimeLogModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateTaskCheckListModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateTaskModelTests.cs" />
+    <Compile Include="Model\TsiWebCreateTimeEntryReasonRequestTests.cs" />
+    <Compile Include="Model\TsiWebCreateTimeSlipModelTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldCategoryRequestTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldCategoryResponseTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldCategoryTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldDefinitionModelTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldDefinitionResponseTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldDefinitionTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldSearchModelTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldsResponseTests.cs" />
+    <Compile Include="Model\TsiWebCustomFieldTests.cs" />
+    <Compile Include="Model\TsiWebDateTimeSearchModelTests.cs" />
+    <Compile Include="Model\TsiWebDeleteServiceOrderPartsUsedModelTests.cs" />
+    <Compile Include="Model\TsiWebDepartmentTests.cs" />
+    <Compile Include="Model\TsiWebDiscountTests.cs" />
+    <Compile Include="Model\TsiWebDispatchBoardTests.cs" />
+    <Compile Include="Model\TsiWebDocumentResponseTests.cs" />
+    <Compile Include="Model\TsiWebDocumentsResponseTests.cs" />
+    <Compile Include="Model\TsiWebDocumentSummaryTests.cs" />
+    <Compile Include="Model\TsiWebDocumentTests.cs" />
+    <Compile Include="Model\TsiWebDocumentTopicTests.cs" />
+    <Compile Include="Model\TsiWebEmailAddressResponseTests.cs" />
+    <Compile Include="Model\TsiWebEmailAddressTests.cs" />
+    <Compile Include="Model\TsiWebExpenseModelTests.cs" />
+    <Compile Include="Model\TsiWebExpensePaymentTypeModelTests.cs" />
+    <Compile Include="Model\TsiWebExpensePaymentTypesResponseTests.cs" />
+    <Compile Include="Model\TsiWebExpensePaymentTypeTests.cs" />
+    <Compile Include="Model\TsiWebExpenseTypeModelTests.cs" />
+    <Compile Include="Model\TsiWebExpenseTypesResponseTests.cs" />
+    <Compile Include="Model\TsiWebExpenseTypeTests.cs" />
+    <Compile Include="Model\TsiWebExternalProductTests.cs" />
+    <Compile Include="Model\TsiWebFreightTermTests.cs" />
+    <Compile Include="Model\TsiWebHowDidYouHearAboutUsTests.cs" />
+    <Compile Include="Model\TsiWebInventoryCountTests.cs" />
+    <Compile Include="Model\TsiWebInventoryLocationTests.cs" />
+    <Compile Include="Model\TsiWebInvoiceTermTests.cs" />
+    <Compile Include="Model\TsiWebItemCoveredTests.cs" />
+    <Compile Include="Model\TsiWebItemServicedTests.cs" />
+    <Compile Include="Model\TsiWebJournalActionsResponseTests.cs" />
+    <Compile Include="Model\TsiWebJournalActionTests.cs" />
+    <Compile Include="Model\TsiWebJournalEntriesResponseTests.cs" />
+    <Compile Include="Model\TsiWebJournalEntryResponseTests.cs" />
+    <Compile Include="Model\TsiWebJournalEntrySummaryTests.cs" />
+    <Compile Include="Model\TsiWebJournalEntryTests.cs" />
+    <Compile Include="Model\TsiWebJournalTopicTests.cs" />
+    <Compile Include="Model\TsiWebLocationDetailTests.cs" />
+    <Compile Include="Model\TsiWebMarketingGroupTests.cs" />
+    <Compile Include="Model\TsiWebMasterTableEntryTests.cs" />
+    <Compile Include="Model\TsiWebMasterTableResponseTests.cs" />
+    <Compile Include="Model\TsiWebMeterGroupTests.cs" />
+    <Compile Include="Model\TsiWebMeterModelTests.cs" />
+    <Compile Include="Model\TsiWebMeterTests.cs" />
+    <Compile Include="Model\TsiWebMovementLogTests.cs" />
+    <Compile Include="Model\TsiWebNextActionTypeTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityDetailTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityNameTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityResponseTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityStageLogTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityStageSummaryTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityStageTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityStatusTests.cs" />
+    <Compile Include="Model\TsiWebOpportunitySummaryTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityTests.cs" />
+    <Compile Include="Model\TsiWebOpportunityTypeTests.cs" />
+    <Compile Include="Model\TsiWebPagedRequestTests.cs" />
+    <Compile Include="Model\TsiWebPartAndLaborTests.cs" />
+    <Compile Include="Model\TsiWebPasswordCategoryTests.cs" />
+    <Compile Include="Model\TsiWebPaymentMethodTests.cs" />
+    <Compile Include="Model\TsiWebPayMethodTests.cs" />
+    <Compile Include="Model\TsiWebPersonTests.cs" />
+    <Compile Include="Model\TsiWebPhoneLocationTests.cs" />
+    <Compile Include="Model\TsiWebPhoneNumberResponseTests.cs" />
+    <Compile Include="Model\TsiWebPhoneNumberTests.cs" />
+    <Compile Include="Model\TsiWebPrefixTests.cs" />
+    <Compile Include="Model\TsiWebPriceBookItemDetailTests.cs" />
+    <Compile Include="Model\TsiWebPriceBookItemResponseTests.cs" />
+    <Compile Include="Model\TsiWebPriceBookItemSummaryTests.cs" />
+    <Compile Include="Model\TsiWebPriceBookItemTests.cs" />
+    <Compile Include="Model\TsiWebPriceLevelTests.cs" />
+    <Compile Include="Model\TsiWebPricingDetailTests.cs" />
+    <Compile Include="Model\TsiWebProductInformationTests.cs" />
+    <Compile Include="Model\TsiWebPuchaseOrderVendorItemTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderAssemblyDetailTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderDescriptionTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderDetailTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderLineItemReceiptTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderLineItemSerialNumberTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderLineItemTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderRelatedDocumentTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderResponseTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderSummaryTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderTests.cs" />
+    <Compile Include="Model\TsiWebPurchaseOrderVendorItemsResponseTests.cs" />
+    <Compile Include="Model\TsiWebPurchasingTests.cs" />
+    <Compile Include="Model\TsiWebQuoteAssemblyDetailAdjustmentTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailAssemblyItemTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailCommentModelTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailItemModelTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailItemTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailResponseTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailSubtotalModelTests.cs" />
+    <Compile Include="Model\TsiWebQuoteDetailTests.cs" />
+    <Compile Include="Model\TsiWebQuoteNoteModelTests.cs" />
+    <Compile Include="Model\TsiWebQuoteNoteResponseTests.cs" />
+    <Compile Include="Model\TsiWebQuoteNotesResponseTests.cs" />
+    <Compile Include="Model\TsiWebQuoteNoteSummaryTests.cs" />
+    <Compile Include="Model\TsiWebQuoteOpportunityTests.cs" />
+    <Compile Include="Model\TsiWebQuotePurchaseOrderTests.cs" />
+    <Compile Include="Model\TsiWebQuoteRelatedDocumentsTests.cs" />
+    <Compile Include="Model\TsiWebQuoteResponseTests.cs" />
+    <Compile Include="Model\TsiWebQuoteServiceOrderTests.cs" />
+    <Compile Include="Model\TsiWebQuoteSummaryTests.cs" />
+    <Compile Include="Model\TsiWebQuoteTests.cs" />
+    <Compile Include="Model\TsiWebQuoteToServiceOrderResponseTests.cs" />
+    <Compile Include="Model\TsiWebRecurringServiceOrderSchedulesResponseTests.cs" />
+    <Compile Include="Model\TsiWebRecurringServiceOrderScheduleTests.cs" />
+    <Compile Include="Model\TsiWebRepDetailTests.cs" />
+    <Compile Include="Model\TsiWebRepModelTests.cs" />
+    <Compile Include="Model\TsiWebRepPreferencesTests.cs" />
+    <Compile Include="Model\TsiWebRepSummaryTests.cs" />
+    <Compile Include="Model\TsiWebResolutionTests.cs" />
+    <Compile Include="Model\TsiWebResponseTests.cs" />
+    <Compile Include="Model\TsiWebSalesTaxCodeTests.cs" />
+    <Compile Include="Model\TsiWebSearchAccountResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchAgreementResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchContactResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchContractResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchCriteriaTests.cs" />
+    <Compile Include="Model\TsiWebSearchOpportunityResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchPriceBookResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchQuotesResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchServiceOrderResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchTaskResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchTimeEntryResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchTimeLogResponseTests.cs" />
+    <Compile Include="Model\TsiWebSearchTimeSlipResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderAssignedTechTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderBriefDescriptionTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderCommentTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderContractTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderDetailCommentTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderDetailTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderExpenseSearchResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderExpenseSearchResultTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderExpensesResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderExpenseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderItemServicedResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderItemsServicedResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderLockTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderNoteModelTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderNoteResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderNotesResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderNoteTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderNoteTopicTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderPartsUsedCommentModelTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderPartsUsedResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderPartUsedAssemblyDetailTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderPartUsedResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderPartUsedTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderPriorityTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderProfileTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderQuoteTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderResolutionResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderResolutionTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSeverityTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderStatusTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSubContractorsResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSubContractorTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSummaryTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSymptomResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSymptomTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderSystemTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTemplatePartAssemblyDetailTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTemplatePartTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTemplateTaskTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTemplateTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTemplateTimeLogTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTimeLogResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTimeLogsResponseTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTimeLogTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderTypeTests.cs" />
+    <Compile Include="Model\TsiWebServiceOrderWebLinkTests.cs" />
+    <Compile Include="Model\TsiWebServiceZoneTests.cs" />
+    <Compile Include="Model\TsiWebShipperTests.cs" />
+    <Compile Include="Model\TsiWebShippingMethodTests.cs" />
+    <Compile Include="Model\TsiWebShipToResponseTests.cs" />
+    <Compile Include="Model\TsiWebShipToTests.cs" />
+    <Compile Include="Model\TsiWebSICCodeTests.cs" />
+    <Compile Include="Model\TsiWebStateTests.cs" />
+    <Compile Include="Model\TsiWebSubContractorTests.cs" />
+    <Compile Include="Model\TsiWebSupportedSystemTests.cs" />
+    <Compile Include="Model\TsiWebSymptomTests.cs" />
+    <Compile Include="Model\TsiWebSystemTypeTests.cs" />
+    <Compile Include="Model\TsiWebTaskActionPlanTests.cs" />
+    <Compile Include="Model\TsiWebTaskActionTests.cs" />
+    <Compile Include="Model\TsiWebTaskAttendeeTests.cs" />
+    <Compile Include="Model\TsiWebTaskChecklistItemTests.cs" />
+    <Compile Include="Model\TsiWebTaskCheckListResponseTests.cs" />
+    <Compile Include="Model\TsiWebTaskCheckListTemplateItemTests.cs" />
+    <Compile Include="Model\TsiWebTaskCheckListTemplateTests.cs" />
+    <Compile Include="Model\TsiWebTaskDetailTests.cs" />
+    <Compile Include="Model\TsiWebTaskLibraryTests.cs" />
+    <Compile Include="Model\TsiWebTaskResourceTests.cs" />
+    <Compile Include="Model\TsiWebTaskResponseTests.cs" />
+    <Compile Include="Model\TsiWebTasksResponseTests.cs" />
+    <Compile Include="Model\TsiWebTaskSummaryTests.cs" />
+    <Compile Include="Model\TsiWebTaskTests.cs" />
+    <Compile Include="Model\TsiWebTimeEntryReasonResponseTests.cs" />
+    <Compile Include="Model\TsiWebTimeEntryReasonTests.cs" />
+    <Compile Include="Model\TsiWebTimeEntryResponseTests.cs" />
+    <Compile Include="Model\TsiWebTimeEntryTests.cs" />
+    <Compile Include="Model\TsiWebTimeLogTests.cs" />
+    <Compile Include="Model\TsiWebTimeSlipResponseTests.cs" />
+    <Compile Include="Model\TsiWebTimeSlipSummaryTests.cs" />
+    <Compile Include="Model\TsiWebTimeSlipTests.cs" />
+    <Compile Include="Model\TsiWebTitleTests.cs" />
+    <Compile Include="Model\TsiWebUpdateContractLineItemModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateContractModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateEntryModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateExpenseModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateExpensePaymentTypeRequestTests.cs" />
+    <Compile Include="Model\TsiWebUpdateExpenseTypeRequestTests.cs" />
+    <Compile Include="Model\TsiWebUpdateJournalActionRequestTests.cs" />
+    <Compile Include="Model\TsiWebUpdateManagedServiceOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdatePriceBookItemModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdatePurchaseOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateQuoteModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateServiceOrderItemServicedModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateServiceOrderModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateServiceOrderNonStockPartsUsedModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateServiceOrderPartsUsedAssemblyDetailModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateServiceOrderPartsUsedModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateServiceOrderTimeLogModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateTaskCheckListModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateTaskModelTests.cs" />
+    <Compile Include="Model\TsiWebUpdateTimeEntryReasonRequestTests.cs" />
+    <Compile Include="Model\TsiWebUpdateTimeSlipModelTests.cs" />
+    <Compile Include="Model\TsiWebVendorItemTests.cs" />
+    <Compile Include="Model\TsiWebVendorSummaryTests.cs" />
+    <Compile Include="Model\TsiWebVendorTests.cs" />
+    <Compile Include="Model\TsiWebWorkOrderResponseTests.cs" />
+    <Compile Include="Model\TsiWebWorkOrderSummaryTests.cs" />
+    <Compile Include="Model\TsiWebWorkOrderTests.cs" />
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tsi.Web\Tsi.Web.csproj">
+      <Project>{b73c17c3-9457-461f-8861-532f146c3aa4}</Project>
+      <Name>Tsi.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.props'))" />
+    <Error Condition="!Exists('..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets" Condition="Exists('..\..\packages\MSTest.TestAdapter.1.3.2\build\net45\MSTest.TestAdapter.targets')" />
+</Project>

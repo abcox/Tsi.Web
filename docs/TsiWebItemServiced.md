@@ -1,0 +1,45 @@
+# IO.Swagger.Model.TsiWebItemServiced
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**ItemsServicedNumber** | **int?** |  | [optional] 
+**ServiceOrderNumber** | **int?** |  | [optional] 
+**AccountNumber** | **int?** |  | [optional] 
+**CustomerInventoryNumber** | **int?** |  | [optional] 
+**CustomerInventoryAssemblyDetailNumber** | **int?** |  | [optional] 
+**ContractNumber** | **int?** |  | [optional] 
+**ContractDetailNumber** | **int?** |  | [optional] 
+**RMA** | **int?** |  | [optional] 
+**Quantity** | **int?** |  | [optional] 
+**MeterReading** | **int?** |  | [optional] 
+**MeterUsed** | **int?** |  | [optional] 
+**RMADetail** | **int?** |  | [optional] 
+**ProductType** | **int?** |  | [optional] 
+**MSPAccountAssets** | **int?** |  | [optional] 
+**ItemID** | **string** |  | [optional] 
+**ItemDescription** | **string** |  | [optional] 
+**RepairCode** | **string** |  | [optional] 
+**Location** | **string** |  | [optional] 
+**Problem** | **string** |  | [optional] 
+**Repair** | **string** |  | [optional] 
+**SerialNumber** | **string** |  | [optional] 
+**RMANumber** | **string** |  | [optional] 
+**Manufacturer** | **string** |  | [optional] 
+**ProvidersAssetId** | **string** |  | [optional] 
+**WarrantyCovered** | **bool?** |  | [optional] 
+**UpdateContract** | **bool?** |  | [optional] 
+**CompleteDate** | **DateTime?** |  | [optional] 
+**Symptom1** | **string** |  | [optional] 
+**Symptom2** | **string** |  | [optional] 
+**Symptom3** | **string** |  | [optional] 
+**Symptom4** | **string** |  | [optional] 
+**Symptom5** | **string** |  | [optional] 
+**Resolution1** | **string** |  | [optional] 
+**Resolution2** | **string** |  | [optional] 
+**Resolution3** | **string** |  | [optional] 
+**Resolution4** | **string** |  | [optional] 
+**Resolution5** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

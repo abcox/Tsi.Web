@@ -1,0 +1,60 @@
+# IO.Swagger.Model.TsiWebPriceBookItem
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**PartNumber** | **string** | Gets or sets PartNumber of the item in the pricebook. | [optional] 
+**ItemDescription** | **string** | Gets or sets the item description in the pricebook. | 
+**Type** | **string** | Gets or sets the Type. | [optional] 
+**Status** | **string** | Gets or sets the item status. | 
+**DateCreated** | **DateTime?** | Gets or sets Created Date of the item in the pricebook. | [optional] 
+**LastEditDate** | **DateTime?** | Gets or sets LastEditDate of the item in the pricebook. | [optional] 
+**LastSoldDate** | **DateTime?** | Gets or sets LastSoldDate of the item in the pricebook. | [optional] 
+**ManufacturerListPrice** | **double?** | Gets or sets ManufacturerListPrice of the item in the pricebook. | [optional] 
+**Description2** | **string** | Gets or sets the description in the pricebook. | [optional] 
+**Description3** | **string** | Gets or sets the description in the pricebook. | [optional] 
+**ItemCategory** | **string** | Gets or sets the ItemCategory. | [optional] 
+**ItemSubCategory** | **string** | Gets or sets the ItemSubCategory. | [optional] 
+**Comments** | **string** | Gets or sets the item Comments. | 
+**ItemCanBeDiscounted** | **bool?** |  | [optional] 
+**Features** | **string** |  | [optional] 
+**ManufacturerName** | **string** |  | [optional] 
+**ManufacturerPartNumber** | **string** |  | [optional] 
+**UnitOfMeasure** | **string** |  | [optional] 
+**Weight** | **string** |  | [optional] 
+**UPC** | **string** |  | [optional] 
+**WarrantyDays** | **string** |  | [optional] 
+**IVRPartNumber** | **int?** |  | [optional] 
+**LaborHoursRequired** | **double?** |  | [optional] 
+**Bin** | **string** |  | [optional] 
+**ItemURL** | **string** |  | [optional] 
+**PictureFile** | **string** |  | [optional] 
+**Serialized** | **bool?** |  | [optional] 
+**Inactive** | **bool?** |  | [optional] 
+**HotItem** | **bool?** |  | [optional] 
+**Taxable** | **bool?** |  | [optional] 
+**SubjectToSingleItemTax** | **bool?** |  | [optional] 
+**SubjectToProviderTax** | **bool?** |  | [optional] 
+**GSTExempt** | **bool?** |  | [optional] 
+**UseAssemblyGLCodes** | **bool?** |  | [optional] 
+**PrintOnInvoice** | **bool?** |  | [optional] 
+**PrintOnQuote** | **bool?** |  | [optional] 
+**AddToCustomerInventory** | **bool?** |  | [optional] 
+**AddOnlyAssemblyDetailtoCustomerInventory** | **bool?** |  | [optional] 
+**ReceivingGLCode** | **string** |  | [optional] 
+**MaintenancePrice** | **double?** |  | [optional] 
+**MaintenancePercentage** | **double?** |  | [optional] 
+**BaseCost** | **double?** |  | [optional] 
+**RepairCost** | **double?** |  | [optional] 
+**AverageCost** | **double?** |  | [optional] 
+**ExchangeValue** | **double?** |  | [optional] 
+**AccountingLinkSalesCode** | **string** |  | [optional] 
+**DiscountTier** | **int?** |  | [optional] 
+**ApplyQuantityDiscountsToAssemblyDetail** | **bool?** |  | [optional] 
+**AssemblyType** | **string** |  | [optional] 
+**PrimaryVendorAccountNumber** | **int?** |  | [optional] 
+**ProviderTaxTypeNumber** | **int?** |  | [optional] 
+**DefaultProjectPhaseNumber** | **int?** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
